@@ -3,13 +3,15 @@
      // Each platform can define its own latest version or follow the default.
      // Both a latest stable version and a latest unstable version are defined.
      $major_stable		="2.6";
-     $minor_stable		="14";
+     $minor_stable		="15";
      $latest_stable             = $major_stable.".".$minor_stable;
      $latest_stable_win		= $latest_stable;
 #     $latest_stable_win         = $latest_stable."-1";
      $latest_stable_mac_ppc     = $latest_stable."-1";
      $latest_stable_mac_intel   = $latest_stable."-1";
-     $tarball                   = $latest_stable."b";
+// Change this when there has been a re-tag to add the re-tag letter,
+// e.g. if one retagged 2.6.13 to 2.6.13a, make $tarball = $latest_stable."a".
+     $tarball                   = $latest_stable;
      
 #     $major_latest_unstable		="2.5";
 #     $minor_latest_unstable		="10"; 
@@ -37,7 +39,7 @@
      $latest_stable_win="gnucash-".$latest_stable_win."-setup.exe";
      $latest_stable_mac_intel="Gnucash-Intel-".$latest_stable_mac_intel.".dmg";
      $latest_stable_mac_ppc="Gnucash-PPC-".$latest_stable_mac_ppc.".dmg";
-     $latest_stable_source="gnucash-".tarball.".tar.bz2";
+     $latest_stable_source="gnucash-".$tarball.".tar.bz2";
 
      $old_stable_path=$stable_path.$old_stable."/";
      

@@ -34,7 +34,7 @@ include("externals/menu.phtml");
 <div class="featureborder">
 <h2 class="featuretitle"><?php printf (T_("GnuCash v%s"), $major_stable)?> <?php echo T_("(current stable release)");?></h2>
 </div>
-<h3><?= T_("Current <em>stable</em> user documentation and developer documentation");?></h3>
+<h3><?= T_("Current <em>stable</em> user documentation");?></h3>
 <div id="stabledoc">
 <div style="float:left;">
 <h2 class="download-title"><?php echo T_("Download");?> (<em><?php echo T_("Stable");?></em>)</h2>
@@ -75,6 +75,7 @@ include("externals/menu.phtml");
         <a href="<?=$top_dir;?>/docs/v<?=$major_stable;?>/it_IT/gnucash-help.mobi">
           <img class="docicon" alt="mobi" title="<?php echo T_($mobi);?>" src="<?=$top_dir;?>/images/icons/mobipocket_logo.png" /></a>
       </td></tr>
+      <tr class="doctr">
       <td><?php echo T_("Portuguese");?> :</td><td>
         <a href="<?=$top_dir;?>/viewdoc.phtml?rev=<?=$major_stable;?>&lang=pt&doc=help">
           <img class="docicon" alt="online" title="<?php echo T_($online);?>" src="<?=$top_dir;?>/images/icons/online_logo.png" /></a> |
@@ -167,7 +168,7 @@ if ($old_stable) { ?>
 <div class="featureborder">
 <h2 class="featuretitle"><?php printf (T_("GnuCash v%s"), $major_old_stable)?> <?php echo T_("(old stable release)");?></h2>
 </div>
-<h3><?= T_("Old <em>stable</em> user documentation and developer documentation");?></h3>
+<h3><?= T_("Old <em>stable</em> user documentation");?></h3>
 <div id="stabledoc">
 <div style="float:left;">
 <h2 class="download-title"><?php echo T_("Download");?> (<em><?php echo T_("Stable");?></em>)</h2>
@@ -298,7 +299,7 @@ if ($old_stable) { ?>
       </td></tr>
       <tr class="doctr">
       <td><?php echo T_("German");?> :</td><td>
-        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=de_DE&doc=help">
+        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=de&doc=help">
           <img class="docicon" alt="online" title="<?php echo T_($online);?>" src="<?=$top_dir;?>/images/icons/online_logo.png" /></a> |
         <a href="http://code.gnucash.org/docs/de/gnucash-help.pdf">
           <img class="docicon" alt="pdf" title="<?php echo T_($pdf);?>" src="<?=$top_dir;?>/images/icons/pdf_logo.png" /></a> |
@@ -309,13 +310,24 @@ if ($old_stable) { ?>
       </td></tr>
       <tr class="doctr">
       <td><?php echo T_("Italian");?> :</td><td>
-        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=it_IT&doc=help">
+        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=it&doc=help">
           <img class="docicon" alt="online" title="<?php echo T_($online);?>" src="<?=$top_dir;?>/images/icons/online_logo.png" /></a> |
         <a href="http://code.gnucash.org/docs/it/gnucash-help.pdf">
           <img class="docicon" alt="pdf" title="<?php echo T_($pdf);?>" src="<?=$top_dir;?>/images/icons/pdf_logo.png" /></a> |
         <a href="http://code.gnucash.org/docs/it/gnucash-help.epub">
           <img class="docicon" alt="epub" title="<?php echo T_($epub);?>" src="<?=$top_dir;?>/images/icons/epub_logo.png" /></a> |
         <a href="http://code.gnucash.org/docs/it/gnucash-help.mobi">
+          <img class="docicon" alt="mobi" title="<?php echo T_($mobi);?>" src="<?=$top_dir;?>/images/icons/mobipocket_logo.png" /></a>
+      </td></tr>
+      <tr class="doctr">
+      <td><?php echo T_("Portuguese");?> :</td><td>
+        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=pt&doc=help">
+          <img class="docicon" alt="online" title="<?php echo T_($online);?>" src="<?=$top_dir;?>/images/icons/online_logo.png" /></a> |
+        <a href="http://code.gnucash.org/docs/pt/gnucash-help.pdf">
+          <img class="docicon" alt="pdf" title="<?php echo T_($pdf);?>" src="<?=$top_dir;?>/images/icons/pdf_logo.png" /></a> |
+        <a href="http://code.gnucash.org/docs/pt/gnucash-help.epub">
+          <img class="docicon" alt="epub" title="<?php echo T_($epub);?>" src="<?=$top_dir;?>/images/icons/epub_logo.png" /></a> |
+        <a href="http://code.gnucash.org/docs/pt/gnucash-help.mobi">
           <img class="docicon" alt="mobi" title="<?php echo T_($mobi);?>" src="<?=$top_dir;?>/images/icons/mobipocket_logo.png" /></a>
       </td></tr>
     </tbody>
@@ -337,7 +349,7 @@ if ($old_stable) { ?>
       </td></tr>
       <tr class="doctr">
       <td><?php echo T_("German");?> :</td><td>
-        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=de_DE&doc=guide">
+        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=de&doc=guide">
           <img class="docicon" alt="online" title="<?php echo T_($online);?>" src="<?=$top_dir;?>/images/icons/online_logo.png" /></a> |
         <a href="http://code.gnucash.org/docs/de/gnucash-guide.pdf">
           <img class="docicon" alt="pdf" title="<?php echo T_($pdf);?>" src="<?=$top_dir;?>/images/icons/pdf_logo.png" /></a> |
@@ -348,7 +360,7 @@ if ($old_stable) { ?>
       </td></tr>
       <tr class="doctr">
       <td><?php echo T_("Italian");?> :</td><td>
-        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=it_IT&doc=guide">
+        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=it&doc=guide">
           <img class="docicon" alt="online" title="<?php echo T_($online);?>" src="<?=$top_dir;?>/images/icons/online_logo.png" /></a> |
         <a href="http://code.gnucash.org/docs/it/gnucash-guide.pdf">
           <img class="docicon" alt="pdf" title="<?php echo T_($pdf);?>" src="<?=$top_dir;?>/images/icons/pdf_logo.png" /></a> |
@@ -359,7 +371,7 @@ if ($old_stable) { ?>
       </td></tr>
       <tr class="doctr">
       <td><?php echo T_("Japanese");?> :</td><td>
-        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=ja_JP&doc=guide">
+        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=ja&doc=guide">
           <img class="docicon" alt="online" title="<?php echo T_($online);?>" src="<?=$top_dir;?>/images/icons/online_logo.png" /></a> |
         <a href="http://code.gnucash.org/docs/ja/gnucash-guide.pdf">
           <img class="docicon" alt="pdf" title="<?php echo T_($pdf);?>" src="<?=$top_dir;?>/images/icons/pdf_logo.png" /></a> |
@@ -367,6 +379,31 @@ if ($old_stable) { ?>
           <img class="docicon" alt="epub" title="<?php echo T_($epub);?>" src="<?=$top_dir;?>/images/icons/epub_logo.png" /></a> |
         <a href="http://code.gnucash.org/docs/ja/gnucash-guide.mobi">
           <img class="docicon" alt="mobi" title="<?php echo T_($mobi);?>" src="<?=$top_dir;?>/images/icons/mobipocket_logo.png" /></a>
+      </td></tr>
+      <tr class="doctr">
+      <td><?php echo T_("Portuguese");?> :</td><td>
+        <a href="<?=$top_dir;?>/viewdoc.phtml?rev=trunk&lang=pt&doc=guide">
+          <img class="docicon" alt="online" title="<?php echo T_($online);?>" src="<?=$top_dir;?>/images/icons/online_logo.png" /></a> |
+        <a href="http://code.gnucash.org/docs/pt/gnucash-guide.pdf">
+          <img class="docicon" alt="pdf" title="<?php echo T_($pdf);?>" src="<?=$top_dir;?>/images/icons/pdf_logo.png" /></a> |
+        <a href="http://code.gnucash.org/docs/pt/gnucash-guide.epub">
+          <img class="docicon" alt="epub" title="<?php echo T_($epub);?>" src="<?=$top_dir;?>/images/icons/epub_logo.png" /></a> |
+        <a href="http://code.gnucash.org/docs/pt/gnucash-guide.mobi">
+          <img class="docicon" alt="mobi" title="<?php echo T_($mobi);?>" src="<?=$top_dir;?>/images/icons/mobipocket_logo.png" /></a>
+      </td></tr>
+    </tbody>
+    </table>
+  </li>
+  <li><b><?= T_("API") ?></b>
+    <table class="doctable">
+    <tbody>
+      <tr class="doctr">
+      <td><a href="http://code.gnucash.org/docs/MAINT">MAINT</a></td><td> |
+        <?php echo T_("current bugfix branch");?>
+      </td></tr>
+      <tr class="doctr">
+      <td><a href="http://code.gnucash.org/docs/MASTER">MASTER</a></td><td> |
+        <?php echo T_("future feature branch");?>
       </td></tr>
     </tbody>
     </table>
@@ -379,8 +416,7 @@ if ($old_stable) { ?>
 </div>
 
 </div>
-
-<p class="justify"><?php echo T_("Every night a server builds the documentation from the current contents of the <span class=\"gnucash\">GnuCash</span> git repository. This includes the <b>Developer Documentation</b> from <b>Doxygen</b> and <b>User Documentation</b> for the current <em>stable</em> version of <span class=\"gnucash\">GnuCash</span>.");?></p>
+<p class="justify"><?php echo T_("Every night a server builds the documentation from the current contents of the <span class=\"gnucash\">GnuCash</span> source repository. This includes the <b>Developer Documentation</b> from <b>Doxygen</b> and <b>User Documentation</b> for the current <em>stable</em> version of <span class=\"gnucash\">GnuCash</span>.");?></p>
 </div>
 
 <div class="dialog warning">
